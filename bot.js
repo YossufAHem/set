@@ -43,5 +43,14 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 }
 });
 
+client.on('guildMemberAdd', member => {
+const YossiF = member.guild.channels.get("514913278254776340");//ايدي الشات
+if(!YossiF) return;
+if(YossiF) {
+YossiF.send(`**..Welcome 💠 To 💠 Tune 🎵 4,5K**`);          
+}
+});
+
+
 
 client.login(process.env.BOT_TOKEN);
